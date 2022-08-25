@@ -1,0 +1,21 @@
+<div class="container-md">
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Carrera</th>
+          <th scope="col">Hobbie</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let datosAlumno of datosAlumnos ">
+          <td> {{ datosAlumno.nombre }} </td>
+          <td> {{ datosAlumno.edad }} </td>
+          <td> {{ datosAlumno.carrera }} </td>
+          <td> {{ datosAlumno.hobbie }} </td>
+        </tr>
+      </tbody>
+    
+  </table>
+</div>

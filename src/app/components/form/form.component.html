@@ -1,0 +1,41 @@
+<div class="container col-md-6  mt-5">
+<form  [formGroup]="datosForm" (ngSubmit)="onSubmit()" class="mb-3">
+    <div class="form-group ">
+        <div class="input-group input-group-lg mb-3">
+            <div class="input-group-text">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+        </div>
+        <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-calendar"></i>
+                </div>
+            </span>
+            <input type="text" class="form-control" formControlName="edad" placeholder="Edad">
+        </div>
+        <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+            </span>
+            <input type="text" class="form-control" formControlName="carrera" placeholder="Carrera">
+        </div>
+        <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+            </span>
+            <input type="text" class="form-control" formControlName="hobbie" placeholder="Hobbie">
+        </div>
+    </div>
+    <div class="button">
+        <button class=" w-100 btn btn-success btn-lg btn-block" type="submit"><i class="fas fa-database"></i> Aceptar</button>
+    </div>
+</form>
+</div>
